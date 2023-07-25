@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists Using Array</title>
+
+    <style>
+    	body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+    	.container {
+    		background-color: blanchedalmond;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th,td {
+            background-color: #f2f2f2;
+        }
+
+
+        ul {
+        	background-color:beige;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+	<div class="container">
+    <center><h1>Create Lists using Array</h1></center>
+     
+   	<h3>Create this table with the help of JavaScript</h3>
+    <table border="1">
+        <tr>
+            <th>S.No</th>
+            <th>Product Name</th>
+            <th>Product Weight</th>
+            <th>Unit Price</th>
+        </tr>
+        <script type="text/javascript">
+            var headers = ['S.No', 'Product Name', 'Product Weight', 'Unit Price'];
+
+            var products = [
+                {
+                    SNo: 1,
+                    productName: 'Oil',
+                    productWeight: '30 kg',
+                    Unitprice: 'Rs.4500'
+                },
+                {
+                    SNo: 2,
+                    productName: 'Wheat',
+                    productWeight: '20 kg',
+                    Unitprice: 'Rs.2600'
+                },
+                {
+                    SNo: 3,
+                    productName: 'Rice',
+                    productWeight: '50 kg',
+                    Unitprice: 'Rs.6300'
+                },
+                {
+                    SNo: 4,
+                    productName: 'Milk',
+                    productWeight: '10 kg',
+                    Unitprice: 'Rs.1500'
+                },
+                {
+                    SNo: 5,
+                    productName: 'Salt',
+                    productWeight: '5 kg',
+                    Unitprice: 'Rs.1000'
+                },
+                {
+                    SNo: 6,
+                    productName: 'Sugar',
+                    productWeight: '60 kg',
+                    Unitprice: 'Rs.9500'
+                }
+            ];
+
+            for (let i = 0; i < products.length; i++) {
+                document.write("<tr><td>" + products[i].SNo + "</td><td>" + products[i].productName + "</td><td>" +
+                    products[i].productWeight + "</td><td>" + products[i].Unitprice + "</td></tr>");
+            }
+
+        </script>
+    </table>
+    <br>
+    <br>
+
+    <h2>List of Cars</h2>
+    <h4>
+    <ul>
+        <script type="text/javascript">
+            var cars = ["Lamborghini", "Bughatti", "Marcedez-Bens", "Range Rover","TOYOTA","Audi", "BMW","Honda","Suzuki"];
+            for (let i = 0; i < cars.length; i++) {
+                document.write("<li>" + cars[i] + "</li>");
+            }
+        </script>
+    </ul>
+    </h4>
+    <br>
+    <br>
+
+    <h2>List of Phone Brands</h2>
+    <ol>
+        <script type="text/javascript">
+            var phone = ["Samsung", "Apple", "Vivo","Oppo", "Nokia", "Lenovo", "Huawei","Xiaomi"];
+            for (let i = 0; i < phone.length; i++) {
+                document.write("<li>" + phone[i] + "</li>");
+            }
+        </script>
+    </ol>
+
+</div>
+</body>
+</html>
+
